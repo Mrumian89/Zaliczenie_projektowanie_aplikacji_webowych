@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+#container-big {
+    width: auto;
+    height: auto;
+}
+
+#menu {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+}
+
+.przedmioty {
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    background-color: antiquewhite;
+}
+
+
+.koszyk {
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    background-color: lightpink;
+    font-size: x-large;
+}
+
+.menu-button {
+    height: auto;
+    width: 300px;
+    background-color: cadetblue;
+    font-size: 20px;
+    font-weight: bold;
+}
