@@ -30,7 +30,7 @@ body {
 
 
 #przedmioty {
-    width: 70vw;
+    width: 80vw;
     height: 100%;
     background-color: lightgreen;
     display: flex;
@@ -39,7 +39,7 @@ body {
 }
 
 #koszyk {
-    width: 30vw;
+    width: 20vw;
     height: 100%;
     background-color: burlywood;
     overflow-y: scroll;
@@ -94,4 +94,45 @@ body {
     float: right;
     text-align: center;
 
+}
+
+.koszyk_menu{
+    height: 200px;
+    width: 100%;
+    display: inline;
+}
+
+.kup_wyczysc {
+    display: block;
+    width: 100%;
+    height: 45px;
+}
+
+.kup {
+    background-color: blueviolet;
+    float: left;
+    height: 40px;
+    text-align: center;
+    width: 48%;
+}
+
+.wyczysc {
+    background-color: blueviolet;
+    float: right;
+    height: 40px;
+    width: 48%;
+    text-align: center;
+}
+
+
+.cena_koszyka {
+    background-color: mediumvioletred;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+
+}
+
+.obszar_zakupu {
+    background-color: white;
 }
