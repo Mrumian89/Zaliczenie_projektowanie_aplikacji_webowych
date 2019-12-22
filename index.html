@@ -18,24 +18,100 @@
     <div id="przedmioty">
         <div class="nowy_przedmiot">
             <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
-            <div class="nazwa_produktu">Nazwa produktu</div>
+            <div class="nazwa_produktu">Kawa</div>
             <div class="cena_dodaj">
-                <div class="cena">Cena</div>
-                <div class="dodaj">Dodaj</div>
+                <div class="cena">9.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
             </div>
         </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Herbata</div>
+            <div class="cena_dodaj">
+                <div class="cena">7.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Woda</div>
+            <div class="cena_dodaj">
+                <div class="cena">3.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Kompot</div>
+            <div class="cena_dodaj">
+                <div class="cena">1.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Kefir</div>
+            <div class="cena_dodaj">
+                <div class="cena">3.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Sok jabłkowy</div>
+            <div class="cena_dodaj">
+                <div class="cena">3.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Sok porzeczkowy</div>
+            <div class="cena_dodaj">
+                <div class="cena">3.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Sok pomarańczowy</div>
+            <div class="cena_dodaj">
+                <div class="cena">5.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
+        <div class="nowy_przedmiot">
+            <img alt="zdjecie" src="https://pbs.twimg.com/profile_images/446243429316456448/jkjQHhLA.jpeg">
+            <div class="nazwa_produktu">Sok multivitamina</div>
+            <div class="cena_dodaj">
+                <div class="cena">4.99<span>zł</span></div>
+                <button class="dodaj" onclick="dodajDoKoszyka(this)">Dodaj</button>
+            </div>
+        </div>
+
     </div>
 
 
     <div id="koszyk">
-        <div class="koszyk_menu">
-            <div class="kup_wyczysc">
-                <div class="kup">Kup</div>
-                <div class="wyczysc">Wyczyść</div>
+        <div id="koszyk_menu">
+            <div id="kup_wyczysc">
+                <button id="kup" onclick="kupKoszyk()">Kup</button>
+                <button id="wyczysc" onclick="usunWszystko()">Wyczyść</button>
             </div>
-            <div class="cena_koszyka">Cena koszyka</div>
-            <div class="obszar_zakupu"></div>
+            <div id="cena_koszyka"><span>CENA KOSZYKA</span> <span id="cena_koszyka_wartosc">0.00</span><span>zł</span>
+            </div>
         </div>
+        <div id="obszar_zakupu">
+        </div>
+
     </div>
 </div>
 </body>

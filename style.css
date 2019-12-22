@@ -10,7 +10,7 @@ body {
     background-color: lightblue;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     position: absolute;
     z-index: 3;
     top: 0;
@@ -32,25 +32,30 @@ body {
 #przedmioty {
     width: 80vw;
     height: 100%;
-    background-color: lightgreen;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
+    justify-content: center;
 }
 
 #koszyk {
     width: 20vw;
     height: 100%;
-    background-color: burlywood;
-    overflow-y: scroll;
-
+    background-color: papayawhip;
+    overflow-y: auto;
 }
 
 .menu-button {
     height: auto;
     width: 200px;
     background-color: cadetblue;
-    font-size: 3vh;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-size: 2.5vh;
+    overflow: hidden;
+    font-weight: bold;
+
 }
 
 .nowy_przedmiot{
@@ -58,7 +63,7 @@ body {
     max-width: 200px;
     min-height: 300px;
     min-width: 200px;
-    background-color: grey;
+    background-color: lightgrey;
     margin: 20px;
     overflow: hidden;
     padding: 20px;
@@ -70,10 +75,13 @@ body {
 }
 
 .nazwa_produktu{
-    background-color: lightblue;
+    background-color: grey;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: large;
 }
 
 .cena_dodaj {
@@ -82,17 +90,21 @@ body {
 }
 
 .cena {
-    background-color: lightblue;
+    background-color: grey;
     width: 40%;
     float: left;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .dodaj {
-    background-color: lightblue;
+    background-color: grey;
     width: 40%;
     float: right;
     text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
 
 }
 
@@ -102,37 +114,91 @@ body {
     display: inline;
 }
 
-.kup_wyczysc {
+#kup_wyczysc {
     display: block;
     width: 100%;
     height: 45px;
 }
 
-.kup {
-    background-color: blueviolet;
+#kup {
+    background-color: darkseagreen;
     float: left;
     height: 40px;
     text-align: center;
     width: 48%;
+    font-weight: bold;
+
 }
 
-.wyczysc {
-    background-color: blueviolet;
+#wyczysc {
+    background-color: darkseagreen;
     float: right;
     height: 40px;
     width: 48%;
     text-align: center;
+    font-weight: bold;
+
 }
 
 
-.cena_koszyka {
-    background-color: mediumvioletred;
+#cena_koszyka {
+    background-color: darkseagreen;
     width: 100%;
-    height: 50px;
+    height: 40px;
     text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#obszar_zakupu {
+    height: auto;
+}
+
+
+.karta_dodana_do_koszyka {
+    height: 50px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.obszar_zakupu_nazwaproduktu_usuń{
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.nazwaproduktu_koszyk {
+    background-color: darkseagreen;
+    opacity: 85%;
+    float: left;
+    height: 20px;
+    text-align: center;
+    width: 48%;
+    font-size: small;
+    overflow: hidden;
+}
+
+.nazwaproduktu_usuń {
+    background-color: darkseagreen;
+    opacity: 85%;
+    float: right;
+    height: 20px;
+    width: 48%;
+    text-align: center;
+    font-size: small;
+    overflow: hidden;
 
 }
 
-.obszar_zakupu {
-    background-color: white;
+.cena_w_koszyku {
+    background-color: darkseagreen;
+    opacity: 85%;
+    height: 20px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: small;
+    overflow: hidden;
+
 }
